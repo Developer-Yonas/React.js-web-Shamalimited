@@ -1,0 +1,44 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "iconFamily": "ai",
+            "icon": "AiOutlineRead",
+            "title": "Digital Menu",
+            "detail": "Customers can scan the QR code with their smartphones to access the menu digitally, reducing the need for physical menus and minimizing contact between staff and customers.",
+            "wowClass": "fadeInLeftBig",
+            "wowClassDuration": "1s"
+        },
+        {
+            "id": 2,
+            "iconFamily": "ai",
+            "icon": "AiOutlineGoogle",
+            "title": "Gazettaa.com (explore, engage, enjoy)",
+            "link": "https://www.gazettaa.com",
+            "detail": "Gazettaa is a news, entertainment, and digital advertising website that is revolutionizing the way people consume content. Gazetta is a powerful platform for business owners and professionals to promote their goods and services and to connect with their target audience.",
+            "wowClass": "fadeInRightBig",
+            "wowClassDuration": "1s"
+        },
+        
+        
+        
+        {
+            "id": 3,
+            "iconFamily": "ai",
+            "icon": "AiFillThunderbolt",
+            "title": "Power bank",
+            "detail": "We offer a 20,000mAh power bank with three cable options (Type-C, USB, and iPhone) for phone charging. It's available at rates of 10 ETB for 1 hour, 20 ETB for 2 hours, and 30 ETB for 6 hours. Once activated, these cables can charge three different phones simultaneously. Users can extend the charge by entering code NO 1 up to five times when their phone is off, activating 5 minutes of charging each time. The system automatically turns off after the selected hourly package expires. It's not functional without the system itself, and we provide it to restaurants at no cost. payments are made cashless and upfront via the online payment system Telebirr.",
+            "wowClass": "fadeInLeftBig",
+            "wowClassDuration": "1.3s"
+        },
+        {
+            "id": 4,
+            "iconFamily": "ai",
+            "icon": "AiOutlineCloud",
+            "title": "ERP System",
+            "detail": "A software system that helps you run your entire business, supporting automation and processes in finance, human resources, manufacturing, supply chain, services, procurement, and more.",
+            "wowClass": "fadeInRightBig",
+            "wowClassDuration": "1.3s"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+@use './variables';
+@use './mixin';
+
+#footer {
+    .detail {
+        @include mixin.positionDisplay(flex, center, center);
+        width: 100%;
+        flex-direction: column;
+        height: 7em;
+        background-color: #f2f5f8;
+    }
+}

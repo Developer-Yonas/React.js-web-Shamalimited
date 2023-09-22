@@ -1,0 +1,49 @@
+@use './variables';
+@use './mixin';
+
+#banner-call {
+    background-color: variables.$blueColor;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+
+
+    .items {
+        @include mixin.defaultWidthHeight();
+        padding: 50px 0;
+        display: flex;
+    }
+
+    .description {
+        @include mixin.positionDisplay(flex, center, center);
+        flex-direction: column;
+
+        h1 {
+            color: variables.$whiteColor;
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        p {
+            color: variables.$whiteColor;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .button {
+        @include mixin.positionDisplay(flex, center, center);
+
+        .btn {
+            background-color: variables.$blueColor;
+            border: 4px solid white;
+            font-size: 20px;
+            font-weight: 700;
+            width: 200px;
+            border-radius: 0;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@use './variables';
+@use './mixin';
+
+#services-box {
+    margin-top: 40px;
+
+    .col {
+        //if height 100%, it will be follow the content.
+        //if min height 100%, default will be follow the content, but it will be bigger by content as 1 row
+        //if min height ex:10em, default will be 10em, but will bigger as the content as 1 row.
+        @include mixin.positionDisplay(flex, center, center);
+        margin-bottom: 30px;
+        min-height: 11em;
+        font-family: variables.$secondaryFontFamily;
+
+        .services-box-detail {
+            @include mixin.defaultWidthHeight();
+            display: flex;
+            align-items: center;
+            padding: 10px 0 10px 0;
+
+            -webkit-box-shadow: 10px 13px 26px -9px rgba(199, 199, 199, 1);
+            -moz-box-shadow: 10px 13px 26px -9px rgba(199, 199, 199, 1);
+            box-shadow: 10px 13px 26px -9px rgba(199, 199, 199, 1);
+            transition: transform .3s ease;
+
+            svg {
+                color: variables.$blueColor;
+                margin-left: 30px;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                margin-left: 1em;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: bolder;
+                    margin-top: 1em;
+                    margin-bottom: .5em;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                -webkit-box-shadow: -5px 2px 34px -9px rgba(199, 199, 199, 1);
+                -moz-box-shadow: -5px 2px 34px -9px rgba(199, 199, 199, 1);
+                box-shadow: -5px 2px 34px -9px rgba(199, 199, 199, 1);
+            }
+        }
+
+
+
+
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "BannerTour",
+  "steps": [
+    {
+      "file": "src/components/Banner.js",
+      "description": "This is a section for Banner,\r\n",
+      "line": 8
+    },
+    {
+      "file": "src/components/Banner.js",
+      "description": "Use carousel for slide image",
+      "line": 9
+    },
+    {
+      "file": "src/components/Banner.js",
+      "description": "use Json data for looping images\r\n",
+      "line": 12
+    }
+  ]
+}

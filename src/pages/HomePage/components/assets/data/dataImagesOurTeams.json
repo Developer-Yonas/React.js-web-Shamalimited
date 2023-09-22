@@ -1,0 +1,48 @@
+{
+    "teams": [
+        {
+            "id": 1,
+            "imageURL": "./assets/img/team-1.jpg",
+            "alt": "Team member 1",
+            "name": "Walter White",
+            "position": "Chief Executive Officer",
+            "hrefTwitter": "https://twitter.com/",
+            "hrefFacebook": "https://facebook.com/",
+            "hrefGoggle": "https://google.com/",
+            "hrefLinkedIn": "https://linkedin.com/"
+        },
+        {
+            "id": 2,
+            "imageURL": "./assets/img/team-2.jpg",
+            "alt": "Team member 2",
+            "name": "Sarah Jhinson",
+            "position": "Product Manager",
+            "hrefTwitter": "https://twitter.com/",
+            "hrefFacebook": "https://facebook.com/",
+            "hrefGoggle": "https://google.com/",
+            "hrefLinkedIn": "https://linkedin.com/"
+        },
+        {
+            "id": 3,
+            "imageURL": "./assets/img/team-3.jpg",
+            "alt": "Team member 3",
+            "name": "William Anderson",
+            "position": "CTO",
+            "hrefTwitter": "https://twitter.com/",
+            "hrefFacebook": "https://facebook.com/",
+            "hrefGoggle": "https://google.com/",
+            "hrefLinkedIn": "https://linkedin.com/"
+        },
+        {
+            "id": 4,
+            "imageURL": "./assets/img/team-4.jpg",
+            "alt": "Team member 4",
+            "name": "Amanda Jepson",
+            "position": "Accountant",
+            "hrefTwitter": "https://twitter.com/",
+            "hrefFacebook": "https://facebook.com/",
+            "hrefGoggle": "https://google.com/",
+            "hrefLinkedIn": "https://linkedin.com/"
+        }
+    ]
+}

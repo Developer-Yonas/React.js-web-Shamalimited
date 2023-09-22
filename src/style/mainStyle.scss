@@ -1,0 +1,44 @@
+@use './component/mixin';
+@use './component/variables';
+@use './component/topBar';
+@use './component/navbar';
+@use './component/banner';
+@use './component/profile';
+@use './component/services';
+@use './component/clients';
+@use './component/portfolio';
+@use './component/testimonials';
+@use './component/callBanner';
+@use './component/ourTeams';
+@use './component/contactUs';
+@use './component/footer';
+@use './component/media';
+
+#test {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // font-family: 'Open Sans', sans-serif;
+}
+
+.header-section h1 {
+    color: variables.$blueColor;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 16px;
+    font-family: variables.$secondaryFontFamily;
+    margin-top: 2em;
+
+
+    &::after {
+        content: "";
+        padding-top: 20px;
+        display: block;
+        width: 60px;
+        border-bottom: 4px solid variables.$greenColor;
+    }
+}

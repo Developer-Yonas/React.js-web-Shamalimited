@@ -1,0 +1,10 @@
+@mixin positionDisplay($display : flex, $alignItems, $justifyContent) {
+    display: $display;
+    align-items: $alignItems ;
+    justify-content: $justifyContent;
+}
+
+@mixin defaultWidthHeight() {
+    width: 100%;
+    height: 100%;
+}

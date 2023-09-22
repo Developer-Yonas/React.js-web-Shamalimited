@@ -1,0 +1,57 @@
+@use './variables';
+@use './mixin';
+
+
+#top-bar {
+    border-bottom: 1px solid variables.$grayColor;
+    font-size: 15px;
+
+
+    .row {
+        height: 40px;
+    }
+
+    .contact-info {
+        @include mixin.positionDisplay(flex, center, left);
+        color: variables.$grayTextColor;
+
+        .fa-address-book {
+            padding: 0 .5em 0 1em;
+            margin: 0 0 0 2em;
+            border-left: 1px solid variables.$grayColor;
+            color: variables.$blueColor;
+        }
+
+        .fa-envelope {
+            color: variables.$blueColor;
+            padding: 0 .5em 0 0;
+        }
+
+        a {
+            color: variables.$blackColor;
+            text-decoration: none;
+            transition: color .3s ease;
+
+            &:hover {
+                color: variables.$blueColor;
+            }
+        }
+    }
+
+    .social-media {
+       @include mixin.positionDisplay(flex, center, right);
+
+        a {
+            padding: 0 1em 0 0;
+            border-right: 1px solid variables.$grayColor;
+            border-left: 1em solid white;
+            text-decoration: none;
+            color: variables.$grayColorIcon;
+            transition: color .5s ease;
+
+            &:hover {
+                color: variables.$blueColor;
+            }
+        }
+    } 
+}

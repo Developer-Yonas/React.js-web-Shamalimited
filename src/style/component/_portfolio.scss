@@ -1,0 +1,83 @@
+@use './variables';
+@use './mixin';
+
+#portfolio {
+    #portfolio-images {
+        .col {
+            position: relative;
+            overflow: hidden;
+            // margin-left: 5%;
+            padding: 3%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img {
+                transition: transform 0.7s ease;
+            }
+
+            .cover-portfolio-images {
+                @include mixin.defaultWidthHeight();
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0);
+                transition: background-color 1s ease;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+            }
+
+            .caption-portfolio-images {
+                @include mixin.positionDisplay(flex, center, center);
+                @include mixin.defaultWidthHeight();
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: variables.$whiteColor;
+                cursor: pointer;
+
+                h2 {
+                    color: variables.$whiteColor;
+                    font-size: 27px;
+                    font-weight: 700;
+                }
+
+            }
+        }
+        .col img {
+            margin: 10px; /* Adjust the value as needed */
+          }
+    }
+}
+
+.hovered-portfolio-images {
+    transform: scale(1.1);
+}
+
+.modal-image-portfolio {
+    background-color: rgb(0, 0, 0, .8);
+
+    .modal-image-portfolio-dialog {
+        @include mixin.defaultWidthHeight();
+        @include mixin.positionDisplay(flex, center, center);
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        margin: 0;
+
+        .modal-content {
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        .modal-body {
+            padding: 0;
+            width: 100%;
+        }
+    }
+}

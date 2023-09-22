@@ -1,0 +1,119 @@
+@use './variables';
+@use './mixin';
+
+@media (max-width: 767px) {
+
+    #top-bar {
+        display: none;
+    }
+
+    #banner .intro-banner .intro-banner-content h1 {
+        font-size: 40px;
+    }
+
+
+    #profile .row {
+        display: block;
+        margin: 1px;
+
+        #profile-detail {
+            h3 {
+                line-height: 25px;
+            }
+        }
+    }
+
+
+    #services-box {
+        .row {
+            display: block;
+        }
+
+        .col {
+            @include mixin.defaultWidthHeight();
+
+            .services-box-detail {
+
+                @include mixin.positionDisplay(flex, center, center);
+                flex-direction: column;
+
+                svg {
+                    margin-left: 0;
+                }
+
+                h2,
+                p {
+                    margin-top: 10px;
+                    text-align: center;
+
+                }
+
+                .container {
+                    margin-left: 0;
+
+                }
+
+            }
+
+
+        }
+    }
+
+    .modal-image-portfolio .modal-image-portfolio-dialog .modal-content {
+        width: 85%;
+    }
+
+    #testimonials-card {
+        .testimonials-card-item {
+            height: 100%;
+        }
+    }
+
+    #banner-call .items {
+        .row {
+            display: block;
+        }
+
+        .button {
+            margin-top: 25px;
+        }
+
+        .description {
+
+            h1,
+            p {
+                text-align: center;
+
+            }
+        }
+    }
+
+    #contact-us .items .col:nth-child(2) {
+        border: none;
+    }
+
+    #footer {
+        .detail {
+            text-align: center;
+        }
+    }
+
+    #portfolio-images .row {
+        display: block;
+        margin: 1px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: 1320px;
+    }
+}

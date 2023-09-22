@@ -1,0 +1,64 @@
+@use './variables';
+@use './mixin';
+
+#clients {
+    margin-top: -3em;
+
+    .logo-clients {
+        img {
+            height: 15em;
+            width: 100%;
+            display: flex;
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+            cursor: grab;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .slick-next,
+        .slick-prev {
+            display: none !important;
+        }
+    }
+}
+
+.custom-dots-logo {
+    @include mixin.positionDisplay(flex !important, center, center);
+    width: 100%;
+    box-sizing: content-box;
+    height: 3em;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px !important;
+
+    li {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin: 0 0 0 5px;
+
+        button {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+            content: "";
+            color: transparent;
+            transform: scale(.5);
+            transition: transform 0.3s ease;
+        }
+    }
+
+    li.slick-active button {
+        background-color: variables.$greenColor;
+        transform: scale(1);
+    }
+
+
+}

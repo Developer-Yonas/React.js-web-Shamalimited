@@ -1,0 +1,151 @@
+@use './variables';
+@use './mixin';
+
+#navbar {
+    position: sticky;
+    top: 0;
+    font-family: variables.$secondaryFontFamily;
+    background-color: variables.$whiteColor;
+    z-index: 999;
+    box-shadow: -1px 7px 8px -2px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: -1px 7px 8px -2px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: -1px 7px 8px -2px rgba(0, 0, 0, 0.10);
+
+    .navbar-brand {
+        @include mixin.positionDisplay(flex, center, left);
+        height: 100%;
+        color: variables.$blueColor;
+        font-size: 42px;
+        font-weight: 700;
+
+        span {
+            color: variables.$blueColor;
+        }
+       
+          
+    }
+   
+    .navbar-detail {
+        @include mixin.positionDisplay(flex, center, right);
+        @include mixin.defaultWidthHeight();
+
+
+        .nav-link.active {
+            color: variables.$blueColor;
+        }
+
+        a {
+            color: variables.$grayTextColor;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 0 2em 0 0;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color .3s ease;
+            text-align: center;
+
+            &:hover {
+                color: variables.$blueColor;
+            }
+        }
+
+    }
+
+
+
+}
+
+.floating-icon-home {
+    @include mixin.defaultWidthHeight();
+    @include mixin.positionDisplay(flex, center, center);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: variables.$greenColor;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color .5s ease;
+    z-index: 1000000;
+    opacity: 0;
+    transition: opacity 3s ease;
+    visibility: hidden;
+
+    &:hover {
+        background-color: variables.$blueColor;
+    }
+
+    a svg {
+        width: 30px;
+        height: 30px;
+        color: white;
+
+    }
+}
+
+.floating-icon-home-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-navbar-dialog {
+    .modal-dialog {
+        float: left;
+        --bs-modal-margin: 0;
+
+    }
+
+    .modal-content {
+        width: 15em;
+        height: 100vh;
+        overflow: hidden;
+
+        .modal-header {
+            .first-span-modal {
+                color: variables.$blueColor;
+            }
+
+            .last-span-modal {
+                color: variables.$blueColor;
+            }
+        }
+    }
+
+    .modal-body {
+        @include mixin.positionDisplay(flex, flex-start, left);
+        flex-direction: column;
+        font-size: 25px;
+
+        a {
+            padding-top: .3em;
+            cursor: pointer;
+
+            &:hover {
+                color: variables.$blueColor;
+            }
+        }
+    }
+    .modal-footer .social-media {
+        @include mixin.positionDisplay(flex, center, right);
+ 
+         a {
+             padding: 0 0.4em 3em 0;
+             border-right: 1px solid variables.$grayColor;
+             border-left: 1em solid white;
+             text-decoration: none;
+             color: variables.$blueColor;
+             transition: color .5s ease;
+             font-size: 1.5em;
+ 
+             &:hover {
+                 color: variables.$grayColor;
+             }
+         }
+     } 
+
+    .nav-link.active {
+        color: variables.$blueColor;
+    }
+
+}

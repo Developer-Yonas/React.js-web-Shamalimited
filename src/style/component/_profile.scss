@@ -1,0 +1,50 @@
+@use './mixin';
+@use './variables';
+
+#profile {
+    margin-top: 3em;
+    width: 100%;
+    font-family: variables.$primaryFontFamily;
+
+    .custom-list-group {
+        .list-group-item {
+            border: none;
+            padding-left: 0;
+
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #profile-detail {
+        @include mixin.defaultWidthHeight();
+        margin-left: 0;
+        box-sizing: border-box;
+
+        h1 {
+            color: variables.$blueColor;
+            font-weight: 700;
+            margin-bottom: .3em;
+            font-family: variables.$thirdFontFamily;
+            font-size: 35px;
+        }
+
+        h3 {
+
+            width: 90%;
+            font-style: italic;
+            color: #a1a0a0;
+            margin-bottom: 1em;
+            font-size: 16px;
+            font-family: variables.$secondaryFontFamily;
+            line-height: 30px;
+        }
+
+        svg {
+            color: variables.$blueColor;
+        }
+    }
+
+}

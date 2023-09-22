@@ -1,0 +1,47 @@
+@use './variables';
+@use './mixin';
+
+#our-teams {
+    font-family: variables.$secondaryFontFamily;
+
+    .col {
+        .item {
+            @include mixin.positionDisplay(flex, center, center);
+            flex-direction: column;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .item-details {
+            @include mixin.positionDisplay(flex, center, center);
+            flex-direction: column;
+            background-color: variables.$greenColor;
+            width: 100%;
+
+            h3 {
+                color: white;
+                font-weight: 600;
+                margin-top: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            h4 {
+                color: white;
+                font-size: 13px;
+                margin-top: -5px;
+                font-style: italic;
+                text-align: center;
+            }
+
+            .icons svg {
+                color: white;
+                font-size: 17px;
+                padding: 5px;
+                margin: 0 auto 10px;
+            }
+        }
+    }
+}

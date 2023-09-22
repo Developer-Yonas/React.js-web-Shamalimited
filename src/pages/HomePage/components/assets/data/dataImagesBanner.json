@@ -1,0 +1,24 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "url": "./assets/img/intro-carousel/11.jpeg",
+            "alt": "First slide"
+        },
+        {
+            "id": 2,
+            "url": "./assets/img/intro-carousel/22.jpeg",
+            "alt": "Second slide"
+        },
+        {
+            "id": 3,
+            "url": "./assets/img/intro-carousel/33.jpeg",
+            "alt": "Third slide"
+        },
+        {
+            "id": 4,
+            "url": "./assets/img/intro-carousel/44.jpeg",
+            "alt": "Fourth slide"
+        }
+    ]
+}

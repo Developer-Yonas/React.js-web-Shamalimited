@@ -1,0 +1,95 @@
+@use './variables';
+@use './mixin';
+
+#banner {
+    position: relative;
+    width: 100%;
+
+    .carousel-banner {
+        @include mixin.defaultWidthHeight();
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .carousel-item {
+        img {
+            object-fit: cover;
+            height: variables.$bannerImageHeight;
+            
+        }
+    }
+
+    .intro-banner {
+        @include mixin.positionDisplay(flex, center, center);
+        background-color: rgba(250, 242, 242, 0.5);
+        width: 100%;
+        height: variables.$bannerImageHeight;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: variables.$secondaryFontFamily;
+
+        .intro-banner-content {
+            display: block;
+            text-align: center;
+
+            h1 {
+                color: variables.$blueColor;
+                font-weight: 700;
+                font-size: 70px;
+            }
+
+            a {
+                button {
+                    width: 10em;
+                    height: 3em;
+                    font-weight: 700;
+                    font-size: 17px;
+                    margin: 1.5em 0 0 1em;
+                    border-radius: 0;
+                    transition: background-color .3s ease, color .3s ease;
+                    color: variables.$whiteColor;
+                }
+
+                &:nth-child(3) button {
+                    background-color: variables.$blueColor;
+                    border: 2px solid variables.$blueColor;
+
+                    &:hover {
+                        color: variables.$blueColor;
+                        background-color: rgba(255, 255, 255, 0);
+                    }
+
+                }
+
+                &:nth-child(4) button {
+                    background-color: variables.$blueColor;
+                    border: 2px solid variables.$blueColor;
+
+                    &:hover {
+                        color: variables.$blueColor;
+                        background-color: rgba(255, 255, 255, 0);
+                    }
+                }
+            }
+
+
+
+
+
+            span {
+                color: variables.$blueColor;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev,
+    .carousel-indicators {
+        display: none;
+    }
+
+}

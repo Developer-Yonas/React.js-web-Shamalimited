@@ -1,0 +1,29 @@
+{
+    "icons": [
+        {
+            "id": 1,
+            "name": "faTwitter",
+            "href": "https://twitter.com"
+        },
+        {
+            "id": 2,
+            "name": "faFacebook",
+            "href": "https://facebook.com"
+        },
+        {
+            "id": 3,
+            "name": "faInstagram",
+            "href": "https://instagram.com"
+        },
+        {
+            "id": 4,
+            "name": "faGooglePlus",
+            "href": "https://google.com"
+        },
+        {
+            "id": 5,
+            "name": "faLinkedin",
+            "href": "https://linkedin.com"
+        }
+    ]
+}
